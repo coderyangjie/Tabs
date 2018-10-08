@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab选项卡1</title>
+    <link rel="stylesheet" type="text/css" href="css/tab1.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<div style="margin:50px;">
+    <div class="gzrc_box">
+        <ul class="gzrc-hd">
+            <li class="gzrc-active" id="mytzli">我的台账</li>
+            <li id="ldgzrcli">领导工作日程</li>
+            <li style="float:right; margin-right:0; border:none;width: 36px;"><a href="javascript:void(0)" onclick="myTzrcMore()"  title="点击查看更多" class="mytzmore"></a></li>
+        </ul>
+        <ul class="gzrc-bd">
+            <li class="gzrc_thisclass">
+                <div class="fa_text_gzrc" id="mygztz">
+                    <ul>
+                        <li>
+                            <div class="fa_text">
+                                <a  target="_blank" >
+                                    <div>
+                                        <div  class="overline" >
+                                            重庆市人民政府关于报送优化政务服务有关情况的函（其他〔2018〕116号）
+                                        </div>
+                                        <div style='float:right;'>2018-10-08</div>
+                                    </div>
+                                </a>
+
+                        </li>
+                    </ul>
+
+
+                </div>
+            </li>
+            <li>
+                <div class="fa_text_gzrc" id="ldgzrc">
+
+
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(function(){
+        function tabs(tabTit,on,tabCon){
+            $(tabTit).children().hover(function(){
+
+                var index = $(tabTit).children().index(this);
+//	         alert(index);
+                if(index>=2)
+                    return;
+                $(this).addClass(on).siblings().removeClass(on);
+                $(tabCon).children().eq(index).show().siblings().hide();
+            });
+        };
+        tabs(".gzrc-hd","gzrc-active",".gzrc-bd");
+
+    });
+
+    function myTzrcMore(){
+// 	debugger;
+        var gwbs=$(".gzrc-hd > .gzrc-active").attr("id");
+        if(gwbs=="mytzli"){//我的台账
+            opentodopage();
+        }else if(gwbs=="ldgzrcli"){//领导工作日程
+
+        }
+
+    }
+</script>
+</body>
+</html>

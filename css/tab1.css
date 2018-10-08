@@ -1,0 +1,41 @@
+/* css reset */
+body{ margin:0; padding:0;overflow:scroll; overflow-x:hidden;}
+a{ text-decoration:none; margin:0; padding:0;}
+img{ border:none;margin:0; padding:0; display:block;}
+input{ outline:none; margin:0; padding:0;}
+ul,li{ list-style:none; padding:0; margin:0;}
+h1,h2,h3,h4,h5,.div,p{margin:0; padding:0;}
+select,option{ padding:0; margin:0;}
+table{ margin:0; padding:0;}
+dl,dt,dd{display:block;margin:0;}
+*{ font-family:"微锟斤拷锟脚猴拷"; font-size:14px;}
+
+
+/* gzrc_box */
+
+.gzrc_box{
+    width:320px;float:left; border:solid 1px #ebebeb; overflow:hidden;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+.gzrc-hd{width:320px; height:36px; border-bottom:solid 1px #ebebeb; overflow:hidden;}
+.gzrc-hd li{width:auto;font-size:15.3px; color:#333333; font-weight:bold; line-height:34px; float:left; margin-left:12px; margin-right:12px; cursor:pointer; }
+.gzrc-active{ line-height:34px; border-bottom:solid 2px #275293; color:#275293 !important;}
+.gzrc_thisclass{ width:320px; height:133px; margin:auto;}
+.gzrc-bd{height:133px;}
+.gzrc-bd ul{padding-left:10px;}
+.gzrc-bd ul li{ width:304px; height:40px; line-height:40px; overflow:hidden; border-bottom:dashed 1px #d7d7d7;}
+.gzrc-bd ul li span{ display:block; float:left; width:10%; height:24px; font-size:14px; color:#fff; line-height:24px; text-align:center; margin:10px 0;}
+.fa_text_gzrc{ width:320px; height:36px; line-height:36px; margin:auto; overflow:hidden;}
+.fa_text_gzrc a{width: 100%;display:block; float:left; background:url(images/gs_13_new.png) left center no-repeat; padding-left:20px; height:36px; line-height:36px; color:#333;white-space: nowrap;text-overflow:ellipsis; overflow:hidden;
+}
+.fa_text_gzrc span{ display:block; float:right; width:20%; text-align:right;}
+.fa_text_gzrc a:hover{ color:#275293;}
+
+.mytzmore{
+    display:block; width:33px; height:33px;float:right; background:url(images/more_new.png) center center no-repeat; margin-right:1px;
+}
+.overline{
+    width:80%; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
